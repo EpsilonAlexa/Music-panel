@@ -1,0 +1,91 @@
+html {
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.panel-music-subscription {
+    background-color: azure;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.panel-music {
+    border-bottom: 1px solid #e1f1ff;
+    margin: 10px;
+}
+
+.panel-music:last-child {
+    border-bottom: none;
+}
+
+.music-img {
+    max-width: 180px;
+    border-radius: 200px;
+}
+
+.subscription-title {
+    text-transform: uppercase;
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.subscription-features {
+    margin: 50px 0 25px;
+    color: #016ff9;
+}
+
+.features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+}
+
+.features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.subscription-price {
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+@media (min-width: 900px){
+    .panel-music-subscription {
+        flex-direction: row;
+    }
+
+    .panel-music {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff ;
+        padding: 25px 50px;
+    }
+
+    .panel-music:last-child {
+        border-right: none;
+    }
+}
